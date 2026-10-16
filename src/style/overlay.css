@@ -1,0 +1,25 @@
+ion-menu {
+	background-color: rgba(0, 0, 0, 0) !important;
+	--ion-item-background: #000000 !important;
+}
+
+ion-item {
+	color: black !important;
+}
+
+.over_header {
+	color: white !important;
+}
+
+ion-menu.ios ion-item ion-icon[data-v-7ba5bd90] {
+	font-size: 24px;
+	color: #000000 !important;
+}
+
+ion-list {
+	height: 100% !important;
+}
+
+ion-content::part(scroll) {
+	padding-bottom: 0px !important;
+}

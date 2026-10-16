@@ -1,0 +1,7 @@
+.footer{
+	border-style:solid ;
+	border-color:black ;
+	border-width:1% ;
+	position: absolute;
+	bottom: -0.85rem;
+}
