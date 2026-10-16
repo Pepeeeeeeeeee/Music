@@ -1,0 +1,40 @@
+name: App
+
+on: [push, pull_request]
+
+jobs:
+    Lint:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x, 19.x]
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Install Dependencies
+              run: npm install
+            - name: Lint
+              run: npm run lint
+
+    Build:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [18.x, 19.x]
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Install Dependencies
+              run: npm install --immutable
+            - name: Build
+              run: npm run build

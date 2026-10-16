@@ -1,0 +1,6 @@
+{
+	"appId": "com.peterduga.music",
+	"appName": "Music",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
