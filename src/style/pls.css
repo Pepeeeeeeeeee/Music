@@ -1,0 +1,96 @@
+ion-card-title.cardT {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: middle;
+	font-size: x-large;
+	height: 3rem;
+    --color: #000000;
+  }
+
+  ion-card.carddd {
+	margin-top: 40px;
+    --background: #838383;
+    --color: #9efff0;
+	width: 41%;
+	border: white solid 2px;
+  }
+
+  .cont {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 3rem;
+  }
+
+  .comp{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  }
+
+  .titel{
+		padding-top: 50px;
+		margin-bottom: -25px;
+		margin-left: 10px;
+		color: #838383;
+  }
+
+  .home_header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-color: transparent !important;
+
+}
+
+ion-toolbar {
+	--color: white;
+	position: absolute;
+	top: 13px;
+	margin-bottom: 12px;
+	--border-color: transparent !important;
+}
+
+ion-toolbar-background{
+	border-color: transparent !important;
+}
+
+.header-translucent-ios ion-toolbar {
+	--opacity: 0;
+	--opacity-scale: 0;
+	border-color: transparent !important;
+}
+ion-header.heder {
+	border-style: none !important;
+	border-width: 0px !important;
+	border-color: transparent !important;
+}
+
+ion-searchbar.customS {
+	width: 75%;
+	height: 35px;
+	padding-top: 4%;
+    background-color: #242424;
+    --color: #ffffff;
+    --placeholder-color: #838383;
+    --icon-color: #838383;
+    --clear-button-color: #838383;
+
+    border-radius: 35px;
+  }
+
+  ion-menu-button.customB {
+	color: white;
+	height: 100%;
+	width: 100%;
+  }
+
+  .aicon{
+	padding-top: 1%;
+	height: 2.5rem;
+	width: 3rem;
+  }
+
+ion-alert{
+	--color:white;
+}
